@@ -1,8 +1,8 @@
-** Cài đặt docker, astro cli
+** Cài đặt docker, astro cli. **
 
-** Mở terminal trong folder, chạy: astro dev start
+** Mở terminal trong folder, chạy: astro dev start. **
 
-** Mở connections và config như sau:
+** Mở connections và config như sau: **
     - conn_id: postgres
     - conn_type: postgres
     - conn_host: postgres
@@ -13,10 +13,10 @@
 
 ![Giao diện Airflow](./screenshots/all_dags.png)
 
-** Chạy dag create_tables_dag_
+** Chạy dag create_tables_dag_ **
 
 ![Giao diện Create Table thành công](./screenshots/create_table.png)
 
-** Chạy final_etl_pipeline
+** Chạy final_etl_pipeline **
 
 ![Chạy thành công](./screenshots/success.png)
