@@ -15,8 +15,6 @@ def load_songs_to_staging():
     song_paths = glob.glob('/usr/local/airflow/include/data/song_data/**/*.json', recursive=True)
 
     insert_sql = """
-        DELETE FROM staging_songs;
-
         INSERT INTO staging_songs (
             num_songs, artist_id, artist_name, artist_latitude, artist_longitude,
             artist_location, song_id, title, duration, year
@@ -58,9 +56,7 @@ def load_events_to_staging():
 
     event_files = glob.glob('/usr/local/airflow/include/data/log_data/**/*.json', recursive=True)
 
-    insert_sql = """
-        DELETE FROM staging_events;
-        
+    insert_sql = """        
         INSERT INTO staging_events (
             artist, auth, firstname, gender, iteminsession, lastname, length,
             level, location, method, page, registration, sessionid, song,
